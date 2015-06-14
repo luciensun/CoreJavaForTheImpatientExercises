@@ -32,7 +32,15 @@ public class Exercise13 {
         for (int i = 1; i < 50; i++) {
             intList.add(i);
         }
-        getARandomVal(intList);
+
+        for (int i = 1; i <= 6; i++) {
+            int randomVal = getARandomVal(intList);
+            lotteryNums[i - 1] = randomVal;
+        }
+        Arrays.sort(lotteryNums);
+
+        System.out.printf("The lottery combination is %s %n",
+                Arrays.toString(lotteryNums));
     }
 
 }
