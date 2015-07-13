@@ -19,11 +19,27 @@ Compiled from "HelloWorld.java"
 public class ch01.sec01.HelloWorld {
     public ch01.sec01.HelloWorld();
  */
-public class Exercise12 {
-
+public class Exercise12 implements A, B{
+    @Override
+    public void m() {
+        B.super.m();
+        System.out.println("Exercise12's m() will print Exercise12");
+    }
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+        Exercise12 exercise = new Exercise12();
+        exercise.m();
     }
 
+}
+
+interface A {
+    default void m() {
+        System.out.println("A's m() will print A");
+    }
+}
+
+interface B {
+    default void m() {
+        System.out.println("B's m() will print B");
+    }
 }
