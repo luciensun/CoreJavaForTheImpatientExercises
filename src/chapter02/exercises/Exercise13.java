@@ -5,10 +5,11 @@ package chapter02.exercises;
  * Write a class with a main method that reads a CSV file of your choice and prints some of the content. 
  * There is sample code on the OpenCSV web site. You haven’t yet learned to deal with exceptions. 
  * Just use the following header for the main method:
-public static void main(String[] args) throws Exception
-The point of this exercise is not to do anything useful with CSV files, 
-but to practice using a library that is delivered as a JAR file.
-
+ * <pre> {@code 
+ * public static void main(String[] args) throws Exception}
+ * </pre>
+ * The point of this exercise is not to do anything useful with CSV files, 
+ * but to practice using a library that is delivered as a JAR file.
  * @author lucienSun
  *
  */
